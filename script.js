@@ -52,4 +52,17 @@ function selectionSort(arr) {
   return newArr;
 }
 
-console.log(selectionSort([5, 3, 6, 2, 19]));
+// console.log(selectionSort([5, 3, 6, 2, 19]));
+
+//Рекурсия
+
+// function countDown(i) {
+//   console.log(i);
+//   if (i <= 1) {
+//     return;
+//   } else {
+//     countDown(i - 1);
+//   }
+// }
+
+// console.log(countDown(5));
