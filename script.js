@@ -66,3 +66,36 @@ function selectionSort(arr) {
 // }
 
 // console.log(countDown(5));
+
+//function sum
+
+function sum(arr) {
+  if (arr.length === 0) {
+    return 0;
+  } else {
+    return arr[0] + sum(arr.slice(1));
+  }
+}
+
+// console.log(sum([2, 1, 2]));
+
+function countOfElemsInArray(arr) {
+  if (arr.length === 0) {
+    return 0;
+  } else {
+    return 1 + countOfElemsInArray(arr.slice(1));
+  }
+}
+// console.log(countOfElemsInArray([2, 1, 2]));
+
+function maxNumInArr(arr) {
+  if (arr.length > 1) {
+    let subMax = maxNumInArr(arr.slice(1));
+    console.log(subMax);
+    return arr[0] > subMax ? arr[0] : subMax;
+  } else {
+    return arr[0];
+  }
+}
+
+console.log(maxNumInArr([4, 5, 11, 2]));
